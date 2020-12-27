@@ -1,0 +1,157 @@
+/*
+Container for the game.
+Define the width and alignment.
+*/
+
+.container {
+
+    height: 550px;
+    width: 500px;
+    align-content: center;
+    background-color: rgba(63, 36, 36, 0.521);
+
+}
+
+/*
+Define the Minesweeper grid.
+It will be 10 X 10 squares big.
+Each square is 40 PX by 40 PX height and width.
+Display flex will ensure squares appear inline and not stacked over each other.
+Flex-wrap will ensure they fit in the grid we just made.
+A dark gray-ish background color is used.
+*/
+
+.grid {
+
+    position: relative;
+    top: 20px;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(189, 175, 175);
+
+    margin: auto;
+    border: 10px solid rgb(221, 199, 199);
+
+}
+
+/*
+
+Let's style the divs.
+
+*/
+
+div {
+
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Roboto Mono', 'Courier';
+
+}
+
+.flagCount {
+
+    position: relative;
+    top: 30px;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Roboto Mono', 'Courier';
+
+}
+
+/*
+
+Style the bombs
+
+*/
+
+.bomb {
+
+    
+    border: 5px solid;
+    border-color: rgb(243, 223, 157) rgb(253, 246, 221) rgb(253, 246, 221) rgb(253, 246, 221);
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box;
+
+}
+
+/*
+
+Style the checked squares.
+
+*/
+
+.checked {
+
+    box-sizing: border-box;
+    background-color: rgb(169, 214, 169);
+    height: 40px;
+    width: 40px;
+    border: 2px solid rgb(63, 153, 67);
+
+}
+
+/*
+Style the valid squares.
+*/
+
+.valid {
+
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    border: 5px solid;
+    border-color: rgb(243, 223, 157) rgb(253, 246, 221) rgb(253, 246, 221) rgb(253, 246, 221);
+
+}
+
+/*
+Styles for the number of adjacent bombs
+*/
+
+.one {
+
+    color: rgb(155, 23, 23);
+
+  }
+  
+.two {
+
+    color: rgb(65, 155, 228);
+
+}
+  
+.three {
+    
+    color: rgb(79, 207, 68);
+
+}
+  
+.four {
+
+    color: rgb(200, 71, 204);
+
+}
+
+.five {
+
+    color: rgb(160, 25, 65);
+
+}
+
+.six {
+
+    color: rgb(238, 255, 0);
+
+}
+  
+#result {
+
+    position: relative;
+    top: 30px;
+    margin-top: 5px;
+    color: rgb(255, 72, 0);
+
+}
